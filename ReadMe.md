@@ -13,3 +13,7 @@ Feature:
  - Add kwenye Cart
  - Pay Online kwa TigoPesa au Bank
  - Notification kweny email na sms
+
+Time Frame
+
+- Tunatarajia kumaliza project hii ndani ya mwezi mmoja
