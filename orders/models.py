@@ -1,6 +1,6 @@
 
 from django.db import models
-from shop.models import Product
+from blog.models import Product
 
 class Order(models.Model):
     buyer_name = models.CharField(max_length=100)

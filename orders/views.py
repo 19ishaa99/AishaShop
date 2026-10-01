@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from django.core.mail import send_mail
 from .models import Order
 from .serializers import OrderSerializer
-from .sms import send_order_sms 
+#from .sms import send_order_sms 
 # from mpesa.utils import initiate_stk_push
 
 class OrderViewSet(viewsets.ModelViewSet):
@@ -27,6 +27,6 @@ class OrderViewSet(viewsets.ModelViewSet):
                 fail_silently=False,
             )
             # Optionally send SMS
-            send_order_sms(order.phone_number, order.id, order.buyer_name)
+            # send_order_sms(order.phone_number, order.id, order.buyer_name)
 
         return order
